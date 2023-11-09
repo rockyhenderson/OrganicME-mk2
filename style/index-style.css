@@ -5,7 +5,12 @@ body {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
 }
-
+main{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 header {
     background-color: #445A3E;
     width: 100%;
@@ -47,7 +52,7 @@ nav {
 }
 
 #section-one {
-    height: 100%;
+    height:1000px;
     width: 90%;
     max-width: 1400px;
     margin: auto;
@@ -63,7 +68,9 @@ h1 {
     width: 50%;
     height: 100vh;
     max-width: 500px;
-    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 
 }
 
@@ -73,8 +80,9 @@ h1 {
 }
 
 #maps {
-    height: 100%;
+    height:100%;
     width: 100%;
+    background-color: lightgray;
 }
 
 #maps-wrapper {
@@ -87,7 +95,7 @@ h1 {
     margin: auto;
     width: 500px;
     margin-top: 70px;
-    margin-bottom: 100px
+    margin-bottom: 100px;
 }
 
 #section-two {
@@ -123,7 +131,8 @@ h1 {
 
 footer {
     margin-top: 40px;
-    height: 400px;
+    height: 300px   ;
+    width:100%;
     background-color: #445A3E;
     display: flex;
     text-align: center;
@@ -227,6 +236,8 @@ img{
 @media only screen and (max-width: 1300px) {
     #section-one {
         flex-direction: column;
+        margin-top:400px;
+        margin-bottom:400px;
     }
 
     #right-side {
@@ -258,9 +269,12 @@ img{
     #right-side {
         margin-bottom: 300px;
     }
+    #section-one{
+        margin-bottom:500px;
+    }
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 540px) {
     #right-side {
         margin-bottom: 350px;
     }
