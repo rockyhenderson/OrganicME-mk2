@@ -11,13 +11,21 @@ main{
     flex-direction: column;
     justify-content: space-evenly;
 }
+.hero-text{
+    font-family: 'Shadows Into Light', cursive; 
+    color:white;
+    font-size: 70px;
+}
 header {
     background-color: #445A3E;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     min-height: 400px;
-    position: relative;
     margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 nav {
@@ -36,19 +44,21 @@ nav {
     max-width: 1400px;
     margin: auto;
 }
-
+.heroSection{
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+    width:50%;
+}
+.img-wrapper{
+    width:50%;
+}
 #shop-button {
     background-color: #E3AB3D;
     border: none;
     border-radius: 15px;
     width: 100px;
     height: 40px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-right: 10px;
-    margin-bottom: 10px;
-
+    margin-right:20px;;
 }
 
 #section-one {
@@ -131,13 +141,13 @@ h1 {
 
 footer {
     margin-top: 40px;
-    height: 300px   ;
+    height: 200px   ;
     width:100%;
     background-color: #445A3E;
     display: flex;
     text-align: center;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     color: white;
 }
 
@@ -191,16 +201,6 @@ footer {
     position: relative;
 
 }
-
-
-
-
-
-
-
-
-
-
 
 .staff-member h1{
     margin:20px;
