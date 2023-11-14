@@ -1,0 +1,32 @@
+header{
+    background-image: url('../img/index/headerBackdrop.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: block;
+    text-align: left;
+    
+
+}
+.hero-section{
+    margin-left:20px;
+    padding-top:9%;
+    width:900px;
+}
+.intro-section{
+    height:80vh;
+    display: flex;
+    justify-content: space-between;
+    width:100vw;
+    margin: auto;
+    margin-left:20px;
+}
+.right-intro-section{
+    width:45%;
+    margin-right: 45px;
+}
+.left-intro-section{
+    width:35%;
+    max-width: 550px;
+    font-weight: 700;
+}

@@ -1,10 +1,4 @@
-body {
-    background-color: #ECEAE6;
-    height: auto;
-    margin: 0px;
-    font-family: 'Open Sans', sans-serif;
-    overflow-x: hidden;
-}
+
 main{
     height: fit-content;
     display: flex;
@@ -16,34 +10,7 @@ main{
     color:white;
     font-size: 70px;
 }
-header {
-    background-color: #445A3E;
-    width: 100%;
-    height: 70vh;
-    min-height: 400px;
-    margin-bottom: 40px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-nav {
-    font-size: 16px;
-}
-
-#navbar {
-    background-color: transparent;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-}
-
-#nav-content-wrapper {
-    max-width: 1400px;
-    margin: auto;
-}
 .heroSection{
     font-family: 'Open Sans', sans-serif;
     color:white;
