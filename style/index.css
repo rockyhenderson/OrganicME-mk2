@@ -87,7 +87,7 @@ header{
 
 /* upcoming events section */
 .upcoming-events-section{
-    height:80vh;
+    height:90vh;
     display:flex;
     justify-content: space-between;
     width:90vw;
@@ -100,22 +100,29 @@ header{
     padding:5px;
 }
 .events{
-    background-color: green;
     width:30%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
 }
-.event{
-    background-color: red;
-    height:100px;
+.event{ 
+    height:120px;
     width:100%;
-    border-bottom:5px solid black;
+    border-bottom:2px solid black;
+    margin-bottom:12px;
+    display: flex;
+    justify-content: flex-start;
 }
 .event-six{
     border-bottom:0px;
 }
-
+.event-logo{
+    height:90px;
+    width:90px;
+}
+.event-text{
+    margin-left:5px;
+}
 /* end upcoming events section */
 
 
