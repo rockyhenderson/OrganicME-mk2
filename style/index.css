@@ -1,3 +1,8 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
 header{
     background-image: url('../img/index/headerBackdrop.jpg');
     background-repeat: no-repeat;
@@ -5,16 +10,28 @@ header{
     background-size: 100% 100%;
     display: block;
     text-align: left;
-    
-
 }
 .hero-section{
     margin-left:20px;
     padding-top:9%;
     width:900px;
 }
+#hero-button{
+    background-color: #d5a038;
+    height:35px;
+    width: 100px;
+    border:none;
+    border-radius: 5px;
+    font-weight: 650;
+}
+#hero-button:hover{
+    background-color: #ad832f;
+}
+
+
+/* intro section */
 .intro-section{
-    height:80vh;
+    height:250px;
     display: flex;
     justify-content: space-between;
     width:100vw;
@@ -30,3 +47,99 @@ header{
     max-width: 550px;
     font-weight: 700;
 }
+/* end intro section */
+
+/* featured product section */
+.featured-prodcut{
+    background-color: red;
+    height:80vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.honey-bottle{
+    background-color: grey;
+    height:450px;
+    width:300px;
+}
+.meat{
+    background-color: grey;
+    height:400px;
+    width:250px;
+}
+.vegtable{
+    background-color: grey;
+    height:400px;
+    width:250px;
+}
+
+
+/* featured product section */
+.rev-section{
+    margin-top:40px;
+    background-color: blue;
+    height:50vh;
+}
+
+/* end feature product section */
+
+
+
+
+/* upcoming events section */
+.upcoming-events-section{
+    height:80vh;
+    display:flex;
+    justify-content: space-between;
+    width:90vw;
+    margin: auto;
+    margin-top:40px;
+}
+.blog{  
+    width:50%;
+    overflow-y:hidden;
+    padding:5px;
+}
+.events{
+    background-color: green;
+    width:30%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.event{
+    background-color: red;
+    height:100px;
+    width:100%;
+    border-bottom:5px solid black;
+}
+.event-six{
+    border-bottom:0px;
+}
+
+/* end upcoming events section */
+
+
+
+
+/* footer section */
+footer{
+    margin-top:40px;
+    height:300px;
+    background-color: green;
+    display: flex;
+    justify-content: space-evenly;
+}
+.adress{
+    background-color: red;
+    width:30%;
+}
+.page-links{
+    background-color: rebeccapurple;
+    width:30%;
+}
+.social-media{
+    background-color: aqua;
+    width:30%;
+}
+
+/* end footer section */
