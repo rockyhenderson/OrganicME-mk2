@@ -27,15 +27,32 @@ header{
 #hero-button:hover{
     background-color: #ad832f;
 }
+/* intro section */
+.intro-section{
+    height:250px;
+    display: flex;
+    justify-content: space-between;
+    width:100vw;
+    margin: auto;
+    margin-left:20px;
+}
+.right-intro-section{
+    width:45%;
+    margin-right: 45px;
+}
+.left-intro-section{
+    width:35%;
+    max-width: 550px;
+    font-weight: 700;
+}
+/* end intro section */
 /* featured product section */
 .featured-prodcut{
-    background-color: red;
     height:80vh;
     display: flex;
     justify-content: space-evenly;
 }
 .honey-bottle{
-    background-color: grey;
     height:450px;
     width:300px;
 }
