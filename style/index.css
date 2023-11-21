@@ -104,7 +104,8 @@ header{
 .event{ 
     height:120px;
     width:100%;
-    border-bottom:2px solid black;
+    background-color: white;;
+    border-radius: 20px;
     margin-bottom:12px;
     display: flex;
     justify-content: flex-start;
@@ -115,6 +116,7 @@ header{
 .event-logo{
     height:90px;
     width:90px;
+    margin-top:15px;
 }
 .event-text{
     margin-left:5px;
