@@ -22,7 +22,6 @@ nav {
 }
 
 #navbar {
-    background-color: transparent;
     width: 100%;
     position: fixed;
     top: 0;
@@ -30,8 +29,6 @@ nav {
 }
 
 #nav-content-wrapper {
-    max-width: 1400px;
-    margin: auto;
 }
 .nav-link{
     margin-right:15px;
