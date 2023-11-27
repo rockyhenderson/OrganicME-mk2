@@ -2,7 +2,7 @@ body {
     background-color: #ECEAE6;
     height: auto;
     margin: 0px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "ADLaM Display";
     overflow-x: hidden;
 }
 header {
@@ -26,9 +26,6 @@ nav {
     position: fixed;
     top: 0;
     z-index: 3;
-}
-
-#nav-content-wrapper {
 }
 .nav-link{
     margin-right:15px;

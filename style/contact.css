@@ -5,29 +5,34 @@ body{
 nav{
     background-color: #445A3E;
 }
-main{
+.content-wrapper{
     display: flex;
     justify-content: space-between;
-    height:100vh;
+    height:98vh;
     width:100vw;
 }
 .left{
     width:50vw;
-    background-image: url("../img/contact/sillysheep.jpg");
-    height:100%;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover
-}
-.right{
-    width:50vw;
-    height:100%;
-    background-color:#445A3E ;
-}
-.form-wrapper{
-    height:100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.right{
+    width:50vw;
+    height:100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-wrapper{
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
 }
