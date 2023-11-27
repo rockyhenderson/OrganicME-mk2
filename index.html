@@ -1,188 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ADLaM Display"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/global.js"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OrganicME</title>
-</head>
+    <title>OrganicMe</title>
+  </head>
 
-<body>
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>OrganicME</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="style/global.css">
-        <link rel="stylesheet" href="style/index.css">
-        <script src="script/global.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    </head>
 
-    <body>
-        <header>
-            <div class="hero-section">
-                <h1 style="font-family: 'Shadows Into Light', cursive; font-size: 100px;">Scotland's Finest Honey</h1>
-                <p style="font-weight:600; font-size:16px; width:600px;margin-bottom:40px;">A Healthy Lifestyle isn't a
-                    dream now, as we will help you get your organic food fast and at an affordable price. this is filler
-                    text i am typing because i cant think of anything else to put here i hope this looks good on my
-                    webpage</p>
-                <button id="hero-button">Shop Now</button>
-                <a href="about-us.html" style="color:rgb(30, 30, 30);text-decoration: none; margin-left:30px;">Learn
-                    More</a>
+  <body>
+    <div class="head-content">
+      <nav class="navbar navbar-expand-md navbar-light " id="navbar">
+        <div class="container-fluid" id="nav-content-wrapper">
+          <a class="navbar-brand" href="index.html">
+            <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
+              class="d-inline-block align-text-top">
+            OrganicMe
+          </a>
+          <button class="navbar-toggler" 
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNavbarNavAltMarkup()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html" style="color:black; text-decoration:underline #d5a038 3px; text-underline-offset: 5px;">Home</a>
+              <a class="nav-link" href="about-us.html"
+                style="color:black;">About</a>
+              <a class="nav-link" href="location.html" style="color:black;">Location</a>
+              <a class="nav-link" href="products.html" style="color:black;">Products</a>
+              <button class="nav-link" id="contact-button"><a href="contact.html" style="color:black; text-decoration: none;">Contact</a></button>
             </div>
-        </header>
-        <nav class="navbar navbar-expand-md navbar-light " id="navbar">
-            <div class="container-fluid" id="nav-content-wrapper" style="margin-left:20px;">
-                <a class="navbar-brand" href="index.html" style="color:white;">
-                    <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
-                        class="d-inline-block align-text-top">
-                    OrganicMe
-                </a>
-                <button class="navbar-toggler" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation" onclick="toggleNavbarNavAltMarkup()">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="index.html" style="color:white;">Home</a>
-                        <a class="nav-link" href="about-us.html" style="color:white; ">About</a>
-                        <a class="nav-link" href="location.html" style="color:white;">Location</a>
-                        <a class="nav-link" href="products.html" style="color:white;">Products</a>
-                        <a class="nav-link" href="contact.html" style="color:white;">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <main>
-            <div class="intro-section">
-                <div class="left-intro-section">
-                    <h1 style="font-weight: inherit;">Helping people to live better than before</h1>
-                </div>
-                <div class="right-intro-section">
-                    <p>For over two decades, Organic Me has been your trusted source for delicious, organic honey in the
-                        Scottish Borders. Our commitment to providing you with the purest, most delectable honey is
-                        unwavering, and our journey has been a sweet one indeed.</p>
-                    <a href="" style="font-weight: 700; text-decoration: underline; text-underline-offset: 2px;
-                    color:#d5a038">Learn More </a>
-                </div>
-            </div>
-            <div class="featured-prodcut">
-                <div class="vegtable">
-                    <img src="img/index/carrots.png" alt="vegtable" style="height:200px;">
-                    <h1>Vegtable</h1>
-                </div>
-                <div class="honey-bottle">
-                    <img src="img/index/honey-jar.png" alt="honey bottle" style="height:100%; width:100%;">
-                    <h1>Honey</h1>
-                </div>
-                <div class="meat">
-                    <img src="" alt="meat">
-                    <h1>Meat</h1>
-                </div>
+          </div>
+        </div>
+      </nav>
 
 
-            </div>
-            <div class="upcoming-events-section">
-                <div class="blog">
-                    <h1>A Day in the Life of an Organic ME Beekeeper</h1>
-                    <h3>Author: Sarah(CEO)</h3>
-                    <b>Posted On: 21/11/2023</b><br><br>
-                    <br> <b>Intro</b>
-                    <p>Welcome to the Organic ME blog! Today, I want to take you behind the scenes of one of the most fascinating and crucial aspects of our operation – beekeeping. As a beekeeper at Organic ME, my days are filled with the buzzing of bees, the sweet aroma of honey, and the profound satisfaction of working in harmony with nature.</p>
-                    <br> <b>Morning Rituals: Greeting the Bees</b>
-                    <p>My day starts early in the morning, just as the sun begins to light up the beautiful Borders region of Scotland. The first thing I do is check on our bee colonies. This involves a careful inspection to ensure the health and well-being of our bees. I look for signs of activity, check their food supplies, and make sure there are no threats to their habitat. The peaceful hum of the bees and the fresh morning air is an invigorating way to start the day.</p>
-                    <br> <b>Midday: The Art of Honey Extraction</b>
-                    <p>By midday, it's time to extract honey. This is a delicate process that requires a gentle touch. I suit up in my beekeeping gear and begin the extraction process. Our approach is sustainable, ensuring that we leave enough honey for the bees while collecting the excess. The honey from Organic ME is pure, unfiltered, and has a unique flavor that reflects the diverse flora of our region.</p>
-                    <button>Read More</button>
-                    
-                    
-                    <br><b>Afternoon: Education and Community Engagement</b>
-                    <p>In the afternoons, I often engage in community activities. This could involve hosting a workshop for local school children, educating them about the importance of bees to our ecosystem, or leading a session in our Organic Gardening course, where I share insights on creating bee-friendly gardens. It's fulfilling to see the community's interest in organic and sustainable practices grow.</p>
-                    <br> <b>Evening: Reflecting and Planning</b>
-                    <p>As the day winds down, I spend some time reflecting on the day’s work and planning for the next. Beekeeping is not just about the here and now; it’s about looking ahead, understanding the cycles of nature, and ensuring that we are doing our part to maintain the balance.</p>
-                    <br> <b>Conclusion: A Rewarding Journey</b>
-                    <p>Being a beekeeper at Organic ME is more than a job; it's a journey filled with learning, challenges, and rewards. Each day, I'm reminded of the impact we have on our environment and the responsibility we carry. Our honey is a testament to the dedication and care we put into every aspect of our work.<br><br>
 
-                        
-                    I hope this glimpse into a day in my life as a beekeeper gives you a better understanding of the love and effort that goes into every jar of Organic ME honey. Remember, when you choose organic, you're not just choosing a product; you're supporting a way of life that respects and nurtures our planet.</p>
-                </div>
-                <div class="events">
-                    <h1> Upcoming Events</h1>
-                    <div class="event event-one">
-                        <img src="img/index/garden-course-logo.png" alt="leaf in a circle"  class="event-logo">
-                        <div class="event-text">
-                            <h3>Intermediate Gardening</h3>
-                            <b>17/11/23, 11AM</b>
-                            <p>Join us as we go into more advance techniques behind your garden</p>
-                        </div>
-                    </div>
-                    <div class="event event-two">
-                        <img src="img/index/coffe-club-logo.png" alt="coffee in a circle"  class="event-logo">
-                        <div class="event-text">
-                            <h3>Coffee Club</h3>
-                            <b>19/11/23, 1PM</b>
-                            <p>Come join us for a wee coffee and a chat(adults only)</p>
-                        </div>
-                    </div>
-                    <div class="event event-three">
-                        <img src="img/index/garden-course-logo.png" alt="leaf in a circle"  class="event-logo">
-                        <div class="event-text">
-                            <h3>Intro to Gardening</h3>
-                            <b>20/11/23, 11AM</b>
-                            <p>Kick off your morning with our intro to gardening!</p>
-                        </div>
-                    </div>
-                    <div class="event event-four">
-                        <img src="img/index/garden-course-logo.png" alt="leaf in a circle"  class="event-logo">
-                        <div class="event-text">
-                            <h3>Intermediate Gardening</h3>
-                            <b>22/11/23, 11AM</b>
-                            <p>Join us as we go into more advance techniques behind your garden</p>
-                        </div>
-                    </div>
-                    <div class="event event-five">
-                        <img src="img/index/coffe-club-logo.png" alt="coffee in a circle"  class="event-logo">
-                        <div class="event-text">
-                            <h3>Coffee Club</h3>
-                            <b>25/11/23, 1PM</b>
-                            <p>Come join us for a wee coffee and a chat(adults only)</p>
-                        </div>
-                    </div>
-                    <div class="event event-six">
-                        <img src="img/index/garden-course-logo.png" alt="leaf in a circle"  class="event-logo">
-                        <div class="event-text">
-                            <h3>Intro to Gardening</h3>
-                            <b>26/11/23, 11AM</b>
-                            <p>Kick off your morning with our intro to gardening!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="rev-section">
-                REVEIWWS
-            </div>
-        </main>
-        <footer>
-            <div class="adress">
+      <div class="head-row">
+        <div class="head-text-content">
 
-            </div>
-            <div class="page-links">
+          <div class="head-content-text-wrapper">
 
-            </div>
-            <div class="social-media">
+            <h1 class="fresh-handpicked-text">Freshly Handpicked <br> just for You</h1>
 
+            <div class="healthy-lifestyle-content">
+              <p> A Healthy Lifestyle isn't a dream now, as we will help you get your organic food fast and at an affordable price. this is filler text i am typing because i cant think of anything else to put here i hope this looks good on my webpage</p>
+              <button class="shop-now-button" >Shop Now</button>
+              <a href="construction.html" style="color: #7bc270; text-decoration: underline; padding-left:1vw; ">Learn More &#8599</a>
             </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-    </body>
 
+          </div>
+
+
+
+
+        </div>
+        <div class="head-img-content">
+          <img src="img/Index/standingFarmerCircle.png" alt="Farmer" style="height:auto; max-height: 100%; width:auto; aspect-ratio: 1 / 1;position:absolute; bottom: 0;">
+        </div>
+      </div>
+    </div>
+
+
+
+
+    
+    <div class="statement-box">
+      <div class="left-box">
+        <p style="color: grey"> Our goal</p>
+        <h1 style="font-size: 6vh;color:#254c50;">
+          Helping people to live <br/>better than before
+        </h1>
+      </div> 
+      <div class="right-box">
+        <p>_______________________________________________</p>
+        <p style="font-size: 2vh;">
+          For over two decades, Organic Me has been your trusted source for delicious, organic honey in the Scottish Borders. Our commitment to providing you with the purest, most delectable honey is unwavering, and our journey has been a sweet one indeed.
+        </p>
+        <a href="construction.html" style="color: #d5a038; text-decoration: underline">Learn More &#8599</a>
+      </div>
+    </div>
+
+
+    <div class="image-box">
+      <div class="right-statement-box">
+        <div class="top-of-statement-header">
+          <div class="half-circle-wrapper">
+            <pie class="half-circle"></pie>
+          </div>
+          
+          <h2  style="font-size: 40px; color:#254c50" class="why-choose-use-text">Why choose us?</h2>
+          
+        </div>
+        <div class="choose-us-box">
+          <div class="half-circle-filler">
+
+          </div>
+          <div class="sticker-wrapper">
+            <h2 style="font-size: 2.5vw;">10,000+</h2>
+            <p style="color: #a9d19d;" class="p-in-choose-us">Customers Worldwide</p>
+          </div>
+          <div class="sticker-wrapper">
+            <h2  style="font-size:  2.5vw; ">Over 200</h2>
+            <p style="color: #a9d19d;" class="p-in-choose-us">Unique Products</p>
+          </div>
+          <div class="sticker-wrapper">
+            <h2  style="font-size:  2.5vw;">400 Farmers</h2>
+            <p style="color: #a9d19d;" class="p-in-choose-us">Working on our farm</p>
+          </div>
+        </div>
+        <div class="choose-us-border">
+          <div class="circle-wrapper">
+            <pie class="circ"> </pie>
+          </div>
+        </div>
+      </div>
+
+  
+  
+  
+  
+  
+      <div class="left-image-box">
+        <img src="img/Index/fullGreyCircle.svg" class="grey-circle-bh-img">
+        <img src="img/Index/harvesters.jpg"  class="farmscape-img" >
+        <img src="img/Index/farm-landscape.png"  class="farmscape-img-mobile" >
+        <img src="img/Index/bales.jpg"  class="farmscape-img-mobile" >
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="product-box-content-for-js" style="margin-top:200px;">
+     
+    </div>
+    
+
+    
+    <div class="footer-border">
+
+    </div>
+    <footer>
+      <div class="footer-section">
+        <h5>OrganicMe</h5>
+        <p>Medowmill Sports Centre<br> Tranent <br> EH33 1LY <br> East Lothian, EH331LY</p>
+        <p>Copyright Jack Henderson &#169;	</p>
+      </div>
+      <div class="footer-section" >
+        <h5>Our Content</h5>
+        <p>About us</p>
+        <p>Contact</p>
+        <p>Legal Stuff</p>
+        <p>Location</p>
+      </div>
+      <div class="footer-section">
+          <h5>Our Socials</h5>
+            <a href="construction.html" style="text-decoration: none; margin-bottom:16px; display: block; color: black;">Instagram</a>
+            <a href="construction.html" style="text-decoration: none; margin-bottom:16px; display: block; color: black;">Facebook</a>
+            <a href="construction.html" style="text-decoration: none; margin-bottom:16px; display: block; color: black;">Twitter</a>
+            <a href="construction.html" style="text-decoration: none; margin-bottom:16px; display: block; color: black;">Tiktok</a>
+      </div>
+
+    
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/script/index.js"></script>
+  </body>
 </html>
