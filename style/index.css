@@ -7,19 +7,7 @@ body {
     font-family: "ADLaM Display";
   
   }
-  
-  #navbar{
-    background-color: transparent;
-    width:100%;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-  
-  }
-  #nav-content-wrapper{
-    max-width:1400px;
-    margin: auto;
-  }
+
   #contact-button{
     position: relative;
     background-color: #d5a038;
@@ -40,7 +28,7 @@ body {
   }
   }
   .head-content {
-    background-color: #57ac49;
+    background-color: #445A3E;
     height: 80vh;
     margin-bottom:5vh;
   }
@@ -128,7 +116,7 @@ body {
     height: 50vh;
   }
   .choose-us-box {
-    background-color: #57ac49;
+    background-color: #445A3E;
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -164,7 +152,7 @@ body {
     border-radius: 100% 0 0 0;
   }
   .choose-us-border {
-    background-color: #7bc270;
+    background-color: #5d7c55;
     height: 5vh;
     width: 50vw;
     display: flex;
@@ -191,11 +179,11 @@ body {
     border-top-right-radius: 90px;
   }
   .footer-border{
-   background-color: #7bc270;
+   background-color: #5d7c55;
    height:5vh;
   }
   footer{
-    background-color: #57ac49 ;
+    background-color: #445A3E ;
     height:300px;
     display: flex;
     justify-content: space-evenly;
