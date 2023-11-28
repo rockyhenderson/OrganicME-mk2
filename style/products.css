@@ -18,11 +18,21 @@ button{
     height:25px;
 }
 header{
-    height:100vh;
+    height:65vh;
     background-image: url(../img/product/combine\ harvester.jpg);
     background-position: center;
     background-size:cover;
     
+}
+.deals{
+    height:40vh;
+    margin-top:20px;
+    background-color: red;
+}
+.deals-text-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .meat-box{
     background-color: white;

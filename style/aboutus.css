@@ -5,6 +5,21 @@ main{
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+
+#contact-button{
+    width:100px;
+    background-color: #E3AB3D;
+    border-radius: 10px;
+    border:0;
+
+}
+@media only screen and (min-width: 768px) {
+    #contact-button{
+        position: absolute;
+        right: 0;
+    }
+}
 .hero-text{
     font-family: 'Shadows Into Light', cursive; 
     color:white;
@@ -506,4 +521,67 @@ img{
     .staff-text-inner-content-body{
     width:90%;
     }
+}
+
+
+
+
+
+.contact-h1{
+    display: inline;
+    font-weight:500;
+}
+#heavy-h1{
+    font-weight: 1000;
+    padding-right:10px;
+}
+.contact-body{
+    background-color: #445A3E;
+    height:630px;
+    width:300px;
+    padding:40px;
+    margin:auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+    margin-top:40px;
+    color:white;
+}
+.form-box{
+    width:100%;
+}
+.radio-wrapper{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.contact-text-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.form-box{
+    border:0px;
+    background-color: transparent;
+    border-bottom:2px #34432f solid;   
+}
+#submit-button{
+    font-size: 20px;
+    background-color: #34432f;
+    border:none;
+    border-radius: 10px;
+    width:220px;
+}
+.modal-container{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3; /* To make sure it's above other elements */
 }
