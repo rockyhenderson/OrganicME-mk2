@@ -5,9 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>OrganicME</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link rel="stylesheet" href="style/global.css">
         <link rel="stylesheet" href="style/products.css">
         <script src="script/global.js"></script>
+        <script src="script/product.js"></script>
         <!-- tailwind here  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,6 +56,20 @@
             </div>
         </div>
     </nav>
-    Products
+
+    <h1>Sorting System Mk2</h1>
+        <form onsubmit="updateProductList(); return false;">
+        <input type="text" id="search-input" />
+        <button class="input-button" type="submit">Search</button>
+        <button onclick="SortByPrice()">Sort by price</button>
+        <button onclick="SortByName()">Sort by Alphabetic</button>
+        </form>
+        <main>
+        <div id="productList">
+            <!-- will be FILLED -->
+        </div>
+        </main>
+    </div>
+    
 </body>
 </html>
