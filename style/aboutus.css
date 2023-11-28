@@ -545,6 +545,7 @@ img{
     box-shadow: 10px 10px 20px black;
     margin-top:40px;
     color:white;
+    position: relative;
 }
 .form-box{
     width:100%;
@@ -564,24 +565,39 @@ img{
     border:0px;
     background-color: transparent;
     border-bottom:2px #34432f solid;   
+    color:white;
 }
 #submit-button{
+    color:white;
     font-size: 20px;
     background-color: #34432f;
     border:none;
+    height:50px;
     border-radius: 10px;
     width:220px;
 }
 .modal-container{
+    color:white;
     height:100vh;
     width:100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 3; /* To make sure it's above other elements */
+}
+
+#close-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+#close-button:hover {
+    opacity: 1;
 }
