@@ -1,38 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>OrganicME</title>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OrganicME</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/global.js"></script>
+    <script src="script/product.js"></script>
+    <!-- tailwind here  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=ADLaM Display" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="style/global.css">
-        <link rel="stylesheet" href="style/products.css">
-        <script src="script/global.js"></script>
-        <script src="script/product.js"></script>
-        <!-- tailwind here  -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sedgwick+Ave+Display&display=swap"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    </head>
+    <link rel="stylesheet" href="style/products.css">
+</head>
+
 <body>
     <header>
-        <div class="hero-section">
-            <h1 style="font-family: 'Shadows Into Light', cursive; font-size: 100px;">Scotlands Finest Honey</h1>
-            <p style="font-weight:600; font-size:16px; width:600px;">A Healthy Lifestyle isn't a dream now, as we will help you get your organic food fast and at an affordable price. this is filler text i am typing because i cant think of anything else to put here i hope this looks good on my webpage</p>
-            <button>Shop Now</button>
-            <a>Learn More</a>
-        </div>
+        <h1>Shop Now</h1>
     </header>
     <nav class="navbar navbar-expand-md navbar-light " id="navbar">
         <div class="container-fluid" id="nav-content-wrapper" style="margin-left:20px;">
@@ -56,20 +51,33 @@
             </div>
         </div>
     </nav>
+    <div class="deals">
+        <div class="deals-text-wrapper">
+            <b> Deals of the Day </b>
+        </div>
+        <div class="deals- caro">
+            <!-- add a caro in here with cycling products -->
+        </div>
+    </div>
+    <main>
 
-    <h1>Sorting System Mk2</h1>
-        <form onsubmit="updateProductList(); return false;">
-        <input type="text" id="search-input" />
-        <button class="input-button" type="submit">Search</button>
-        <button onclick="SortByPrice()">Sort by price</button>
-        <button onclick="SortByName()">Sort by Alphabetic</button>
-        </form>
-        <main>
+
+
+
+
+        <div class="sift-menu">
+            <form onsubmit="updateProductList(); return false;">
+                <input type="text" id="search-input" />
+                <button class="input-button" type="submit">Search</button>
+                <button onclick="SortByPrice()">Sort by price</button>
+                <button onclick="SortByName()">Sort by Alphabetic</button>
+            </form>
+        </div>
         <div id="productList">
             <!-- will be FILLED -->
         </div>
-        </main>
-    </div>
-    
+        </div>
+    </main>
 </body>
+
 </html>

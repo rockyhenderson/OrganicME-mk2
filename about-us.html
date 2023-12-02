@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="style/aboutus.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sedgwick+Ave+Display&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=ADLaM Display" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -21,7 +20,7 @@
     crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/global.css">
 </head>
 
 <body>
@@ -49,12 +48,48 @@
           <a class="nav-link" href="about-us.html" style="color:white; ">About</a>
           <a class="nav-link" href="location.html" style="color:white;">Location</a>
           <a class="nav-link" href="products.html" style="color:white;">Products</a>
-          <a class="nav-link" href="products.html" style="color:white;">Contact</a>
+          <button class="nav-link" href="products.html" style="color:white;" id="contact-button"
+            onclick="contactModal()">Contact</button>
         </div>
       </div>
     </div>
   </nav>
-  
+
+
+  <div class="modal-container" style="display:none;">
+    <div class="contact-body">
+      <a id="close-button" class="close-modal-button close" onclick="closeContactModal()"></a>
+      <form action="form.php" method="post" onsubmit="return false" id="Form">
+        <!-- FIX THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
+        <div class="inner-padding-wrapper">
+          <div class="contact-text-wrapper">
+            <h1 id="heavy-h1">Contact</h1>
+            <h1> Us</h1><br>
+          </div>
+
+          <div class="radio-wrapper">
+            <input type="radio" id="Hi" name="fav_language" value="CSS">
+            <label for="css">Say Hi</label>
+            <div style="width:20px;"></div>
+            <input type="radio" id="Product" name="fav_language" value="JavaScript">
+            <label for="javascript">Product</label><br>
+          </div>
+          <label class="label-text">Your <b>Name</b></label><br><br>
+          <input type="text" id="name" name="name" required class="form-box"><br><br>
+          <label class="label-text">Your <b>Email</b></label><br><br>
+          <input type="email" id="email" name="email" required class="form-box"><br><br>
+          <label class="label-text">Your <b>Question</b></label><br><br>
+          <textarea id="query" name="query" rows="4" cols="50" required class="form-box"></textarea><br><br>
+        </div>
+        <input type="submit" value="Send Message" id="submit-button">
+      </form>
+    </div>
+  </div>
+
+
+
+
+
   <main>
     <div id="section-one">
       <div id="left-side">
@@ -644,18 +679,18 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
+
 </body>
 <footer>
   <div>
     <p>123 Street <br> Edinburgh <br>EEE 144</p>
-    <p>Copyright Jack Henderson&copy;	</p>
+    <p>Copyright Jack Henderson&copy; </p>
   </div>
   <div>
-   <form>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-   </form>
+    <form>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+    </form>
   </div>
 </footer>
 
