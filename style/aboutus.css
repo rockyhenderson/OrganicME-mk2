@@ -4,6 +4,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    font-family: "ADLaM Display";
 }
 .hero-text{
     font-family: 'Shadows Into Light', cursive; 
@@ -12,7 +13,6 @@ main{
 }
 
 .heroSection{
-    font-family: 'Open Sans', sans-serif;
     color:white;
     width:50%;
 }
@@ -81,6 +81,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    font-family: "ADLaM Display";
 }
 
 .placeholder {
