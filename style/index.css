@@ -1,13 +1,12 @@
 
-
 /* general css */
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
-  font-family: "ADLaM Display";
+  overflow-x:hidden !important;
+  font-family: 'Poppins', sans-serif;
 
 }
 /* general css end */
@@ -16,7 +15,7 @@ body {
 
 /* hero section */
 .head-content {
-  background-color: #445A3E;
+  background-color: var(--primary);
   height: 80vh;
   margin-bottom: 5vh;
 }
@@ -33,16 +32,17 @@ body {
 }
 
 .shop-now-button {
-  background-color: #d5a038;
+  background-color: var(--secondary);
   color: black;
+  font-size:20px;
   border: none;
-  height: 40px;
-  width: 150px;
+  height: 60px;
+  width: 160px;
   border-radius: 10px;
 }
 
 .shop-now-button:hover {
-  background-color: #be9032;
+  background-color: var(--sub-secondary);
 }
 
 .head-row {
@@ -127,7 +127,7 @@ body {
 }
 
 .choose-us-box {
-  background-color: #445A3E;
+  background-color: var(--primary);
   color: white;
   display: flex;
   justify-content: space-evenly;
@@ -171,12 +171,12 @@ body {
   position: absolute;
   height: 7vh;
   width: 7vh;
-  background-color: #d5a038;
+  background-color: var(--secondary);
   border-radius: 100% 0 0 0;
 }
 
 .choose-us-border {
-  background-color: #5d7c55;
+  background-color: var(--sub-primary);
   height: 5vh;
   width: 50vw;
   display: flex;
@@ -197,7 +197,7 @@ body {
 
 .half-circle {
   display: block;
-  background-color: #d5a038;
+  background-color: var(--secondary);
   height: 12vh;
   width: 6vh;
   border-radius: 0px;
@@ -217,35 +217,3 @@ body {
 
 
 /* reveiw section end */
-
-/* footer start */
-.footer-border {
-  background-color: #5d7c55;
-  height: 5vh;
-}
-
-footer {
-  background-color: #445A3E;
-  color: white;
-  height: 300px;
-  display: flex;
-  justify-content: space-evenly;
-  text-align: left;
-}
-
-.footer-section {
-  width: 20%;
-  height: 300px;
-  padding-top: 20px;
-
-}
-
-.social-icon {
-  height: 25px;
-  width: 25px;
-}
-
-.farmscape-img-mobile {
-  display: none;
-}
-/* footer end */

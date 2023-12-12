@@ -23,6 +23,10 @@ const fillerPie = document.getElementById("filler-pie");
 const pieZero = document.querySelector(".pie-zero");
 const lineZero = document.querySelector(".line-zero");
 const firstSlide = document.querySelector(".card-1");
+
+const contactModalelement = document.querySelector(".modal-container")
+
+
 //nav bar scroll
 function toggleNavbarNavAltMarkup() {
     var navbarNavAltMarkup = document.getElementById("navbarNavAltMarkup");
@@ -354,3 +358,12 @@ modalIndex = (modalIndex + 1) % modals.length;
 showCurrentModal();
 }
 
+
+
+
+function contactModal(){
+  contactModalelement.style.display = "block";
+}
+function closeContactModal(){
+  contactModalelement.style.display = "none";
+}

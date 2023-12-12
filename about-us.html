@@ -10,17 +10,19 @@
   <link rel="stylesheet" href="style/aboutus.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sedgwick+Ave+Display&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=ADLaM Display" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=ADLaM Display" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/global.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -48,12 +50,48 @@
           <a class="nav-link" href="about-us.html" style="color:white; ">About</a>
           <a class="nav-link" href="location.html" style="color:white;">Location</a>
           <a class="nav-link" href="products.html" style="color:white;">Products</a>
-          <a class="nav-link" href="products.html" style="color:white;">Contact</a>
+          <button class="nav-link" href="products.html" style="color:white;" id="contact-button"
+            onclick="contactModal()">Contact</button>
         </div>
       </div>
     </div>
   </nav>
-  
+
+
+  <div class="modal-container" style="display:none;">
+    <div class="contact-body">
+      <a id="close-button" class="close-modal-button close" onclick="closeContactModal()"></a>
+      <form action="form.php" method="post" onsubmit="return false" id="Form">
+        <!-- FIX THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
+        <div class="inner-padding-wrapper">
+          <div class="contact-text-wrapper">
+            <h1 id="heavy-h1">Contact</h1>
+            <h1> Us</h1><br>
+          </div>
+
+          <div class="radio-wrapper">
+            <input type="radio" id="Hi" name="fav_language" value="CSS">
+            <label for="css">Say Hi</label>
+            <div style="width:20px;"></div>
+            <input type="radio" id="Product" name="fav_language" value="JavaScript">
+            <label for="javascript">Product</label><br>
+          </div>
+          <label class="label-text">Your <b>Name</b></label><br><br>
+          <input type="text" id="name" name="name" required class="form-box"><br><br>
+          <label class="label-text">Your <b>Email</b></label><br><br>
+          <input type="email" id="email" name="email" required class="form-box"><br><br>
+          <label class="label-text">Your <b>Question</b></label><br><br>
+          <textarea id="query" name="query" rows="4" cols="50" required class="form-box"></textarea><br><br>
+        </div>
+        <input type="submit" value="Send Message" id="submit-button">
+      </form>
+    </div>
+  </div>
+
+
+
+
+
   <main>
     <div id="section-one">
       <div id="left-side">
@@ -643,18 +681,45 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
+
 </body>
-<footer>
-  <div>
-    <p>123 Street <br> Edinburgh <br>EEE 144</p>
-    <p>Copyright Jack Henderson&copy;	</p>
+<footer class="padding_4x">
+  <div class="flex">
+    <section class="flex-content padding_1x">
+      <h3>Pages</h3>
+      <a href="#" class="footer-a-tag">Home</a>
+      <a href="#" class="footer-a-tag">About Us</a>
+      <a href="#" class="footer-a-tag">Products</a>
+      <a href="#" class="footer-a-tag">Contact</a>
+      <a href="#" class="footer-a-tag">Location</a>
+    </section>
+    <section class="flex-content padding_1x">
+      <h3>Resources</h3>
+      <a href="#" class="footer-a-tag">Modern Slavery Statement</a>
+      <a href="#" class="footer-a-tag">How we stay econminmical</a>
+      <a href="#" class="footer-a-tag">Legal Stuff</a>
+      <a href="#" class="footer-a-tag">I dont know</a>
+      <a href="#" class="footer-a-tag">Filler :(</a>
+    </section>
+    <section class="flex-content padding_1x">
+      <h3>Newsletter</h3>
+      <p>You can trust us. we only send promo offers,</p>
+      <fieldset class="fixed_flex">
+        <input type="email" name="newsletter" placeholder="Your Email Address" style="color:white;">
+        <button class="btn btn_2">Subscribe</button>
+      </fieldset>
+    </section>
   </div>
-  <div>
-   <form>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-   </form>
+  <div class="flex">
+    <section class="flex-content padding_1x">
+      <p id="copyright">Copyright ©2023 All rights reserved || Jack Henderson</p>
+    </section>
+    <section class="flex-content padding_1x">
+      <a href="#"><i class="fa fa-facebook footer-a-tag"></i></a>
+      <a href="#"><i class="fa fa-twitter footer-a-tag"></i></a>
+      <a href="#"><i class="fa fa-dribbble footer-a-tag"></i></a>
+      <a href="#"><i class="fa fa-linkedin footer-a-tag"></i></a>
+    </section>
   </div>
 </footer>
 
