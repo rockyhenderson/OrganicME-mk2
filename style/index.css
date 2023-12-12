@@ -1,13 +1,12 @@
 
-
 /* general css */
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
-  font-family: "ADLaM Display";
+  overflow-x:hidden !important;
+  font-family: 'Poppins', sans-serif;
 
 }
 /* general css end */
@@ -218,35 +217,3 @@ body {
 
 
 /* reveiw section end */
-
-/* footer start */
-.footer-border {
-  background-color: #5d7c55;
-  height: 5vh;
-}
-
-footer {
-  background-color: #445A3E;
-  color: white;
-  height: 300px;
-  display: flex;
-  justify-content: space-evenly;
-  text-align: left;
-}
-
-.footer-section {
-  width: 20%;
-  height: 300px;
-  padding-top: 20px;
-
-}
-
-.social-icon {
-  height: 25px;
-  width: 25px;
-}
-
-.farmscape-img-mobile {
-  display: none;
-}
-/* footer end */
