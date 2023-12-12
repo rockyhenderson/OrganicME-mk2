@@ -5,7 +5,9 @@
     --gray:rgba(1,1,1,0.6);
     --lite:rgba(255,255,255,0.6);
     --primary:#445A3E;
+    --sub-primary: #5d7c55;
     --secondary:#E3AB3D;
+    --sub-secondary:#be9032;
 }
 
 body {

@@ -4,7 +4,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-family: "ADLaM Display";
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -96,7 +96,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    font-family: "ADLaM Display";
+    font-family: 'Poppins', sans-serif;
 }
 
 .placeholder {
@@ -120,18 +120,6 @@ h1 {
     height: 100%;
     object-fit: cover;
     /* Maintains the aspect ratio and covers the container */
-}
-
-footer {
-    margin-top: 40px;
-    height: 200px   ;
-    width:100%;
-    background-color: #445A3E;
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: white;
 }
 
 .history {

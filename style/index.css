@@ -15,7 +15,7 @@ body {
 
 /* hero section */
 .head-content {
-  background-color: #445A3E;
+  background-color: var(--primary);
   height: 80vh;
   margin-bottom: 5vh;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 .shop-now-button {
-  background-color: #d5a038;
+  background-color: var(--secondary);
   color: black;
   font-size:20px;
   border: none;
@@ -42,7 +42,7 @@ body {
 }
 
 .shop-now-button:hover {
-  background-color: #be9032;
+  background-color: var(--sub-secondary);
 }
 
 .head-row {
@@ -127,7 +127,7 @@ body {
 }
 
 .choose-us-box {
-  background-color: #445A3E;
+  background-color: var(--primary);
   color: white;
   display: flex;
   justify-content: space-evenly;
@@ -171,12 +171,12 @@ body {
   position: absolute;
   height: 7vh;
   width: 7vh;
-  background-color: #d5a038;
+  background-color: var(--secondary);
   border-radius: 100% 0 0 0;
 }
 
 .choose-us-border {
-  background-color: #5d7c55;
+  background-color: var(--sub-primary);
   height: 5vh;
   width: 50vw;
   display: flex;
@@ -197,7 +197,7 @@ body {
 
 .half-circle {
   display: block;
-  background-color: #d5a038;
+  background-color: var(--secondary);
   height: 12vh;
   width: 6vh;
   border-radius: 0px;
