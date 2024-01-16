@@ -10,4 +10,5 @@ $body = "From: E-Mail : $name \n $email_field\n Message:\n $query";
 
 echo("Thank you for your message, it has been sent to $to");
 mail($to, $subject, $body) ;//mail function
+
 ?>
