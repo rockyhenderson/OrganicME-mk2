@@ -29,6 +29,9 @@ header {
     flex-direction: column;
     justify-content: center;
 }
+#contact-button{
+    text-align: center;
+}
 #contact-button:hover{
     background-color:var(--sub-secondary);
 }
