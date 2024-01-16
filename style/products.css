@@ -15,9 +15,7 @@ main{
     display:flex;
     justify-content: space-between;
 }
-button{
-    height:25px;
-}
+
 header{
     height:65vh;
     background-image: url(../img/product/combine\ harvester.jpg);
@@ -29,6 +27,7 @@ header{
     height:40vh;
     margin-top:20px;
     background-color: red;
+    margin-bottom:20px;
 }
 .deals-text-wrapper{
     width: 100%;
@@ -65,7 +64,7 @@ header{
 .sift-menu{
     width: 30vw;
     max-width:300px;
-    background-color: red;
+    background-color: var(--primary);
     height:500px;
 }
 

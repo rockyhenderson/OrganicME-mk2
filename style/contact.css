@@ -1,15 +1,15 @@
-*{
-    font-family: "ADLaM Display";
-}
+
 body{
     height:100vh;
     width:100vw;
+    font-family: 'Poppins', sans-serif !important;
+    background-color: var(--white);
 }
 h1,h2,h3{
     text-align: center;
 }
 nav{
-    background-color: #445A3E;
+    background-color: var(--primary);
 }
 main{
     height:100%;

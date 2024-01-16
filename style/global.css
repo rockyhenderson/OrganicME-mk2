@@ -9,12 +9,14 @@
     --secondary:#E3AB3D;
     --sub-secondary:#be9032;
 }
-
+html{
+    font-family: 'Poppins', sans-serif !important;
+}
 body {
     background-color: var(--white);
     margin:0;
     overflow-x:hidden !important;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
 }
 header {
     background-color: var(--primary);
@@ -27,7 +29,12 @@ header {
     flex-direction: column;
     justify-content: center;
 }
-
+#contact-button{
+    text-align: center;
+}
+#contact-button:hover{
+    background-color:var(--sub-secondary);
+}
 nav {
     font-size: 16px;
 }
@@ -41,7 +48,19 @@ nav {
 .nav-link{
     margin-right:15px;
 }
+#contact-button{
+    width:100px;
+    background-color: #E3AB3D;
+    border-radius: 10px;
+    border:0;
 
+}
+@media only screen and (min-width: 768px) {
+    #contact-button{
+        position: absolute;
+        right: 0;
+    }
+}
 
 
 body{

@@ -1,0 +1,2 @@
+consistant nav bar
+home page needs resizing
