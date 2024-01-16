@@ -27,6 +27,7 @@ header{
     height:40vh;
     margin-top:20px;
     background-color: red;
+    margin-bottom:20px;
 }
 .deals-text-wrapper{
     width: 100%;
@@ -63,7 +64,7 @@ header{
 .sift-menu{
     width: 30vw;
     max-width:300px;
-    background-color: red;
+    background-color: var(--primary);
     height:500px;
 }
 
