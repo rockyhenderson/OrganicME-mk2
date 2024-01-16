@@ -1,2 +1,4 @@
-consistant nav bar
+
 home page needs resizing
+contact page filler text and more design that just white
+sift menu for searching remmains fixed as you scroll through the page?
