@@ -15,9 +15,7 @@ main{
     display:flex;
     justify-content: space-between;
 }
-button{
-    height:25px;
-}
+
 header{
     height:65vh;
     background-image: url(../img/product/combine\ harvester.jpg);
