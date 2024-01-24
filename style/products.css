@@ -23,17 +23,6 @@ header{
     background-size:cover;
     
 }
-.deals{
-    height:40vh;
-    margin-top:20px;
-    background-color: red;
-    margin-bottom:20px;
-}
-.deals-text-wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 .meat-box{
     background-color: white;
     height:300px;
@@ -67,18 +56,23 @@ header{
     height:200px;
 }
 form{
+    margin-top:10px;
     width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
-search-box-wrapper{
-    width:250
-}
+
 #search-input{
     width:100%;
     border-radius: 20px;
     border: none;
 }
-button{
+.sift-button{
     border: none;
+    width:200px;
+    margin: auto;
+    margin-top:10px;
 }
 .content-row{
     display: flex;

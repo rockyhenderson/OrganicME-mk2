@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OrganicME</title>
+    <meta name="description" content="OrganicMe is your freindly place for all your Organic Needs...">
+  <meta name="keywords" content="ORGAINC, ORGANICME, organic Food, Sustainability">
+  <meta name="author" content="Jack Henderson">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script/global.js"></script>
     <script src="script/product.js"></script>
@@ -25,6 +28,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/products.css">
+    <link rel="icon" href="img/OrganicMELogo.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="img/OrganicMELogo.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -34,7 +39,7 @@
     <nav class="navbar navbar-expand-md navbar-light " id="navbar">
         <div class="container-fluid" id="nav-content-wrapper">
           <a class="navbar-brand" href="index.html" style="color:white;">
-            <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
+            <img src="img/OrganicMELogo.svg" alt="" width="30" height="24"
               class="d-inline-block align-text-top">
             OrganicMe
           </a>
@@ -53,15 +58,6 @@
           </div>
         </div>
       </nav>
-    
-    <div class="deals">
-        <div class="deals-text-wrapper">
-            <b> Deals of the Day </b>
-        </div>
-        <div class="deals- caro">
-            <!-- add a caro in here with cycling products -->
-        </div>
-    </div>
     <main>
 
 
@@ -71,9 +67,9 @@
         <div class="sift-menu">
             <form onsubmit="updateProductList(); return false;">
                 <div class="search-box-wrapper"><input type="text" id="search-input"/></div>
-                <button class="input-button" type="submit">Search</button>
-                <button onclick="SortByPrice()">Sort by price</button>
-                <button onclick="SortByName()">Sort by Alphabetic</button>
+                <button  class="sift-button" class="input-button" type="submit">Search</button>
+                <button  class="sift-button" onclick="SortByPrice()">Sort by price</button>
+                <button class="sift-button" onclick="SortByName()">Sort by Alphabetic</button>
             </form>
         </div>
         <div id="productList">
