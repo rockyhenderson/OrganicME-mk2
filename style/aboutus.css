@@ -235,7 +235,12 @@ img{
         margin-bottom: 20px
     }
 }
+@media only screen and (max-width: 600px) {
+    #section-one{
+        margin-top:500px;
+    }
 
+}
 @media only screen and (max-width: 600px) {
     #right-side {
         margin-bottom: 300px;
