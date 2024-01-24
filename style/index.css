@@ -6,7 +6,6 @@ body {
   height: 100%;
   width: 100%;
   overflow-x:hidden !important;
-  font-family: 'Poppins', sans-serif;
 
 }
 /* general css end */
@@ -26,7 +25,39 @@ body {
   font-size: 120px;
   padding-top: 100px;
 }
+@media screen and (max-width: 1950px) {
+  .fresh-handpicked-text {
+      font-size: 100px;
+  }
+}
+@media screen and (max-width: 1485px) {
+  .fresh-handpicked-text {
+      font-size: 80px;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .fresh-handpicked-text {
+      font-size: 70px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .head-img-content {
+      display: none;
+      width:0px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .head-row{
+    width:100%;
+  }
+  .head-content-text-wrapper{
+    width:100%;
+  }
+  .head-text-content{
+    width:100% !important;
+  }
 
+}
 .healthy-lifestyle-content {
   height: 20%;
 }
@@ -36,7 +67,7 @@ body {
   color: black;
   font-size:20px;
   border: none;
-  height: 60px;
+  height: 50px;
   width: 160px;
   border-radius: 10px;
 }
@@ -135,7 +166,35 @@ body {
   height: 40vh;
   /* border-bottom:solid 20px #57ac49; */
 }
-
+@media screen and (max-width: 850px) {
+  .choose-us-border{
+    width:100vw !important;
+  }
+  .grey-circle-bh-img{
+    display: none;
+  }
+  .farmscape-img{
+    display: none
+  }
+  .choose-us-box{
+    width:100vw;
+  }
+  .half-circle{
+    display: none !important;
+  }
+  .why-choose-use-text{
+    width:100%;
+    text-align: center;
+  }
+  .top-of-statement-header{
+    width:90vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .image-box{
+    margin-top:200px;
+  }
+}
 .farmscape-img {
   height: 50vh;
   width: 55vw;
